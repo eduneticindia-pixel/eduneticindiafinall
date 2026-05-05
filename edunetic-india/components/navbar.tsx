@@ -58,7 +58,7 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -80,7 +80,7 @@ export function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-[#0B1B3D] p-2"
@@ -98,7 +98,7 @@ export function Navbar() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="md:hidden bg-[#F8FAFC] border-b border-[#0B1B3D]/10"
+          className="lg:hidden bg-[#F8FAFC] border-b border-[#0B1B3D]/10"
         >
           <div className="px-4 pt-2 pb-6 space-y-1">
             {navLinks.map((link) => (
@@ -111,16 +111,6 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <div className="pt-4 px-3">
-              <Link
-                href="/contact"
-                onClick={() => setIsOpen(false)}
-                className="block w-full text-center px-6 py-3 rounded-full text-sm font-semibold text-white shadow-lg shadow-[#4B2C85]/10"
-                style={{ background: 'linear-gradient(135deg, #4B2C85 0%, #6A2CB0 100%)' }}
-              >
-                JOIN WAITLIST
-              </Link>
-            </div>
           </div>
         </motion.div>
       )}
