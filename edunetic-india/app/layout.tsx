@@ -10,8 +10,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Edunetic India | Master The Skills That Matter',
+  title: 'EDUNETIC INDIA | DESH KA VIKAAS SHIKSHA KE SATH',
   description: "India's affordable, mentor-led platform for Gen-Z to bridge the gap between academic learning and industry demands.",
+  icons: {
+    icon: 'https://ik.imagekit.io/nwe8kioyz/edin.webp',
+    apple: 'https://ik.imagekit.io/nwe8kioyz/edin.webp',
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
