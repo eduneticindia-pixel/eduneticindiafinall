@@ -58,7 +58,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold">Connect</h3>
             <ul className="space-y-4">
               <li className="text-white/60 text-sm">
-                Email: eduneticindia@gmail.com
+                Email: contact@eduneticindia.com
               </li>
               <li className="text-white/60 text-sm">
                 WhatsApp: +91 6394 397 986
