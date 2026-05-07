@@ -118,7 +118,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <div className="text-xs font-bold text-[#0F172A]/40 uppercase tracking-widest">Email Us</div>
-                  <div className="text-lg font-bold text-[#0B1B3D]">eduneticindia@gmail.com</div>
+                  <div className="text-lg font-bold text-[#0B1B3D]">contact@eduneticindia.com</div>
                 </div>
               </div>
               <div className="flex items-center space-x-6">
