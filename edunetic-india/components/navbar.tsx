@@ -68,15 +68,13 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <button
-              onClick={() => {
-                window.scrollTo({ top: 800, behavior: 'smooth' });
-              }}
+            <Link
+              href="https://app.eduneticindia.in/login.php"
               className="px-6 py-2.5 rounded-full text-white text-sm font-semibold shadow-lg shadow-[#4B2C85]/20 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
               style={{ background: 'linear-gradient(135deg, #4B2C85 0%, #6A2CB0 100%)' }}
             >
               Get Started
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -111,6 +109,16 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
+            <div className="pt-4 px-3">
+              <Link
+                href="https://www.app.eduneticindia.in/login.php"
+                onClick={() => setIsOpen(false)}
+                className="block w-full text-center px-6 py-3 rounded-full text-sm font-semibold text-white shadow-lg shadow-[#4B2C85]/10"
+                style={{ background: 'linear-gradient(135deg, #4B2C85 0%, #6A2CB0 100%)' }}
+              >
+                Get Started
+              </Link>
+            </div>
           </div>
         </motion.div>
       )}
